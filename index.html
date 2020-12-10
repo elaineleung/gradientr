@@ -1,0 +1,131 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/3b2a4fa45f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" href="css/bulma.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gradientr - Gradient background generator</title>
+  </head>
+  <body>
+    <div class="page-wrapper" id="gradient">
+      <header>
+        <div class="wrapper">
+          <div class="title">
+            <h1>Gradientr</h1>
+            <h2>A simple gradient generator.</h2>
+          </div>
+          <div>
+            <p class="hero-text">
+              Create gradients by changing the color pickers below, then copy
+              and paste the text into the <span>&lt;style&gt;</span> tag or .css
+              file.
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <section class="main">
+        <div class="wrapper">
+          <div class="panel">
+            <div class="panel-wrapper">
+              <div class="selectors">
+                <div class="color-panel">
+                  <div class="color1">
+                    <div><p>1</p></div>
+                    <div class="color">
+                      <div class="color-picker-1 color"></div>
+                    </div>
+                  </div>
+                  <div class="color2">
+                    <div><p>2</p></div>
+                    <div class="color">
+                      <div class="color-picker-2"></div>
+                    </div>
+                  </div>
+                  <div class="h1-color">
+                    <div><p>Title</p></div>
+                    <div class="color">
+                      <div class="h1-color-picker"></div>
+                    </div>
+                  </div>
+                  <div class="text-color">
+                    <div><p>Text</p></div>
+                    <div class="color">
+                      <div class="text-color-picker"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="switches-panel">
+                  <div class="buttons colors has-addons">
+                    <button id="rgbaselect" class="button is-info is-selected">
+                      RGBA
+                    </button>
+                    <button id="hexaselect" class="button">HEXA</button>
+                  </div>
+                  <div class="buttons colors has-addons">
+                    <button id="toright" class="button is-info is-selected">
+                      <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button id="tobottom" class="button">
+                      <i class="fas fa-arrow-down"></i>
+                    </button>
+                    <button id="bottomright" class="bottomright button">
+                      <i class="fas fa-arrow-down"></i>
+                    </button>
+                    <button id="bottomleft" class="bottomleft button">
+                      <i class="fas fa-arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-wrapper">
+              <div>
+                <div class="code code-input">
+                  <div class="copy">
+                    <span id="code"
+                      >background: linear-gradient(to right, rgb(203, 121, 149),
+                      rgb(0, 195, 255));</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="wrapper">
+          <p class="footer-text">site created by @elaineleung</p>
+          <p class="footer-text">
+            <a class="footer-text" href="https://github.com/Simonwep/pickr"
+              >pickr</a
+            >
+            created by @Simonwep | styled with the help of
+            <a class="footer-text" href="https://bulma.io">bulma.io</a>
+          </p>
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+      <script type="text/javascript" src="js/pickr.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+    </div>
+  </body>
+</html>
